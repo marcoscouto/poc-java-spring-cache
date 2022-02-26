@@ -19,9 +19,11 @@ public class Controller {
 
     @GetMapping("/hello")
     public ResponseEntity response(@RequestParam(required = false) String option) {
+
         if (option != null && option.equals("cancel")) {
             cacheManager.getCache("message").clear();
         }
+
         Response response = client.response();
         return ResponseEntity.ok(response);
     }
