@@ -1,0 +1,8 @@
+spring:
+  cache:
+    type: redis
+    redis:
+      key-prefix: key-example
+  redis:
+    host: localhost
+    port: 6379

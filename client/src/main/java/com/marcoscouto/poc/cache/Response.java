@@ -1,6 +1,8 @@
 package com.marcoscouto.poc.cache;
 
-public class Response {
+import java.io.Serializable;
+
+public class Response implements Serializable {
 
     private String message;
 
